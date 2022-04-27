@@ -1,0 +1,35 @@
+body{
+    background-color:rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#h1game{
+    color: white;
+    font-size: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.082);
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+label{
+    font-size: 50px;
+    padding: 50px;
+    color:aliceblue;
+    
+}
+button{
+    width: 70%;
+    height: 20%;
+    background-color:seagreen;
+    border:none;
+    border-radius: 5px;
+    font-size: 30px;
+    box-shadow: 10px 1px 50px white;
+}
