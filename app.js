@@ -15,18 +15,23 @@ function startFunction() {
 
     const submitBtn = document.createElement('button');
     submitBtn.innerHTML = "Подтвердить";
+
+    let cnt = 0;
     submitBtn.addEventListener('click', () => {
         const userValue = +userInput.value;
         
         if(userValue < gameValue) {
             gameHeader.innerHTML = "Мое число больше, попробуй еще";
             userInput.value = '';
+            cnt++;
         } else if (userValue > gameValue) {
             gameHeader.innerHTML = "Мое число меньше, попробуй еще";
             userInput.value = '';
+            cnt++;
         } else if(userValue === gameValue) {
-            gameHeader.innerHTML = "Поздравляю! Ты угадал!";
+            gameHeader.innerHTML = `Поздравляю! Ты угадал за ${cnt} попыток!`;
             userInput.value = '';
+            cnt++;
         }
     });
 
